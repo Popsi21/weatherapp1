@@ -40,3 +40,7 @@
   position: relative;
   top: -27px;
 }
+.footer {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
