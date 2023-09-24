@@ -5,33 +5,45 @@ let h2 = document.querySelector("h2");
 let date = now.getDate();
 let year = now.getFullYear();
 let months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
+  "January",
+  "February",
+  "March",
+  "April",
   "May",
   "June",
-  "Jul",
-  "Aug",
-  "Sept",
-  "Oct",
-  "Nov",
-  "Dec",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 let month = months[now.getMonth()];
 
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
+h2.innerHTML = `${date} ${month} ${year}`;
 
-h2.innerHTML = `${day}, ${date} ${month} ${year}`;
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
 
 function displayWeatherCondition(response) {
   document.querySelector("#new-city").innerHTML = response.data.name;
@@ -46,6 +58,9 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector("#time").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 function search(city) {

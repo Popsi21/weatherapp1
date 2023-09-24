@@ -30,6 +30,11 @@ h2 {
   margin-top: 10px;
   color: rgb(33, 33, 33);
 }
+.date-attributes {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 10px;
+}
 .description {
   margin: 0 auto;
   text-transform: capitalize;
