@@ -62,7 +62,12 @@ h2 {
   position: relative;
   bottom: 91px;
 }
+
 .footer {
   text-align: center;
   font-family: arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #3f4042;
 }
