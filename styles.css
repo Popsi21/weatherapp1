@@ -6,6 +6,12 @@
   max-width: 600px;
   font-family: arial, sans-serif;
 }
+h1 {
+  color: #4e5052;
+}
+h2 {
+  color: #4e5052;
+}
 
 .searchEngine {
   width: 60%;
@@ -25,20 +31,22 @@
   color: rgb(33, 33, 33);
 }
 .conditions {
-  margin: 0 0 10px;
-  padding: 0;
+  position: relative;
+  left: 350px;
+  top: 30px;
   list-style: none;
   color: rgba(49, 49, 53, 0.93);
 }
 .temperature {
-  color: rgb(33, 33, 33);
+  color: #3f4042;
   font-size: 55px;
   font-weight: 400;
-  margin-bottom: 8px;
+  position: relative;
+  bottom: 35px;
 }
 .units {
   position: relative;
-  top: -27px;
+  top: -63px;
 }
 .footer {
   text-align: center;

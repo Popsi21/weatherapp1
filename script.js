@@ -31,7 +31,7 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-h2.innerHTML = `${day}, ${date} ${month}, ${year}`;
+h2.innerHTML = `${day}, ${date} ${month} ${year}`;
 
 function displayWeatherCondition(response) {
   document.querySelector("#new-city").innerHTML = response.data.name;
