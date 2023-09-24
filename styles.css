@@ -30,23 +30,32 @@ h2 {
   margin-top: 10px;
   color: rgb(33, 33, 33);
 }
+.description {
+  margin: 0 auto;
+  text-transform: capitalize;
+  color: rgba(91, 91, 97, 0.93);
+}
 .conditions {
   position: relative;
   left: 350px;
   top: 30px;
   list-style: none;
-  color: rgba(49, 49, 53, 0.93);
+  color: rgba(91, 91, 97, 0.93);
 }
 .temperature {
   color: #3f4042;
   font-size: 55px;
   font-weight: 400;
   position: relative;
+  bottom: 47px;
+}
+.icon {
+  position: relative;
   bottom: 35px;
 }
 .units {
   position: relative;
-  top: -63px;
+  bottom: 74px;
 }
 .footer {
   text-align: center;
