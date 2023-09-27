@@ -7,8 +7,9 @@
   font-family: arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.94);
 }
-h1 {
+.city {
   color: #6c6d6e;
+  margin-top: 20px;
 }
 h2 {
   color: #6c6d6e;
@@ -43,7 +44,7 @@ h2 {
 .date-attributes {
   list-style: none;
   padding: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .description {
   margin: 0 auto;
@@ -53,28 +54,21 @@ h2 {
 .conditions {
   list-style: none;
   color: rgba(91, 91, 97, 0.93);
-  position: relative;
-  left: 350px;
-  top: 47px;
 }
 .temperature {
   color: #6c6d6e;
   font-size: 55px;
   font-weight: 400;
-  position: relative;
-  bottom: 64px;
+  line-height: 1;
 }
 .icon {
-  position: relative;
-  bottom: 35px;
+  height: 64px;
+  width: 64px;
+  margin-bottom: 30px;
 }
 .units {
   position: relative;
-  bottom: 91px;
-}
-
-.row {
-  margin: 0px;
+  top: -28px;
 }
 
 .footer {
@@ -88,4 +82,11 @@ h2 {
 
 ul {
   line-height: 23px;
+}
+.weather-forecast {
+  color: black;
+  text-align: center;
+}
+.weather-forecast-min {
+  color: #6c6d6e;
 }
