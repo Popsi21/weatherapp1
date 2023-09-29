@@ -86,6 +86,7 @@ ul {
 .weather-forecast {
   color: black;
   text-align: center;
+  font-size: 16px;
 }
 .weather-forecast-min {
   color: #6c6d6e;
